@@ -12,6 +12,5 @@ const exercisesSchema = new Schema ({
     distance: Number
 });
 
-const exercise = mongoose.model("exercise", exercisesSchema);
-
-module.exports = exercise;
+const Exercise = mongoose.model("exercise", exercisesSchema);
+module.exports = Exercise;
