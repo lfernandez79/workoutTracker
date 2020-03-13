@@ -3,18 +3,18 @@ const mongoose = require("mongoose");
 // defined paht to api backend calls
 module.exports = function (app) {
 
-    app.get("/api/workouts", (req, res) => {
-        db.Workout.find({})
-            .then(dbWorkout => {
-                for (const e of dbWorkout) {
-                    e.setTotalDuration();
-                }
-                res.json(dbWorkout);
-            })
-            .catch(err => {
-                res.json(err);
-            });
-    });
+    // app.get("/api/workouts", (req, res) => {
+    //     db.Workout.find({})
+    //         .then(dbWorkout => {
+    //             for (const e of dbWorkout) {
+    //                 e.setTotalDuration();
+    //             }
+    //             res.json(dbWorkout);
+    //         })
+    //         .catch(err => {
+    //             res.json(err);
+    //         });
+    // });
 
     app.get("/api/workouts/range", (req, res) => {
         db.Workout.find({})

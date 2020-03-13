@@ -23,9 +23,9 @@ const workoutSchema = new Schema({
     }]
 });
 
-workoutSchema.methods.setTotalDuration = function () {
+workoutSchema.methods.setTotalDuration = function(){
     let sumDuration = 0;
-    for (const e of this.exercises) {
+    for(const e of this.exercises){
         sumDuration += e.duration;
     }
     this.totalDuration = sumDuration;
