@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3",
-    "mongoose": "^5.3.16",
+    "mongoose": "^5.13.22",
     "morgan": "^1.9.1"
   }
 }
